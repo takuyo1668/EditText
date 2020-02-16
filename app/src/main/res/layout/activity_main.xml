@@ -12,48 +12,60 @@
         android:layout_width="239dp"
         android:layout_height="55dp"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="144dp" />
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV" />
 
     <TextView
         android:id="@+id/TV"
         android:layout_width="400dp"
         android:layout_height="32dp"
+        android:layout_marginStart="4dp"
         android:background="#fff"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintBottom_toTopOf="@+id/show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="373dp"
+        android:background="#ffb6c1"
         android:text="Add"
         android:textSize="18sp"
-        android:background="#ffb6c1"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="310dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="373dp"
+        android:background="#7fffd4"
         android:text="Show"
         android:textSize="18sp"
-        android:background="#7fffd4"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="310dp"
-
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add" />
 
     <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="373dp"
+        android:background="#87ceeb"
         android:text="Clear"
         android:textSize="18sp"
-        android:background="#87ceeb"
-        tools:layout_editor_absoluteX="290dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toEndOf="@+id/show" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
